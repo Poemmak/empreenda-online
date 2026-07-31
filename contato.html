@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Empreenda Online</title>
+
+    <!-- CSS Principal e Responsivo -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome (Ícones) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Script JS -->
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Cabeçalho / Navegação -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Empreenda Online</h2>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="whatsapp.html">WhatsApp</a></li>
+            <li><a href="google.html">Google</a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+            <li><a href="financeiro.html">Financeiro</a></li>
+            <li><a href="precificacao.html">Precificação</a></li>
+            <li><a href="atendimento.html">Atendimento</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo Principal de Contato -->
+    <section class="pagina">
+      <div class="conteudo">
+        <h1>Fale Conosco</h1>
+
+        <p>
+          Tem alguma dúvida sobre os conteúdos, sugestão para o portal ou deseja
+          saber mais sobre esta iniciativa educativa[cite: 2]? Entre em contato
+          conosco preenchendo o formulário ou através dos nossos canais de
+          atendimento abaixo!
+        </p>
+
+        <!-- Cartões de Informações de Contato -->
+        <div class="cards-info">
+          <div class="info">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>E-mail</h3>
+            <p style="word-break: break-all; font-size: 14px">
+              poemmak.roller@gmail.com
+            </p>
+          </div>
+
+          <div class="info">
+            <i class="fa-solid fa-phone"></i>
+            <h3>Telefone</h3>
+            <p>(41) 98874-0885</p>
+          </div>
+
+          <div class="info">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Localização</h3>
+            <p>Curitiba - PR</p>
+          </div>
+
+          <div class="info">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Atendimento</h3>
+            <p>Segunda a Sexta-feira<br />08h às 18h</p>
+          </div>
+        </div>
+
+        <h2>Envie uma mensagem</h2>
+
+        <!-- Formulário com envio real via FormSubmit -->
+        <form
+          action="https://formsubmit.co/poemmak.roller@gmail.com"
+          method="POST"
+        >
+          <!-- Configurações do FormSubmit -->
+          <input
+            type="hidden"
+            name="_subject"
+            value="Novo Contato - Empreenda Online"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            id="nome"
+            name="Nome"
+            placeholder="Digite seu nome"
+            required
+          />
+
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="Mensagem"
+            rows="6"
+            placeholder="Digite sua mensagem"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Rodapé Padronizado -->
+    <footer>
+      <p>
+        © 2026 - Empreenda Online <br />
+        Projeto Extensionista - UNINTER <br />
+        Desenvolvido por Poemma Karolyne Roller[cite: 2]
+      </p>
+    </footer>
+  </body>
+</html>

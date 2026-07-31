@@ -1,0 +1,116 @@
+/* ==========================================================================
+   MEDIAS QUERIES - RESPONSIVIDADE
+   ========================================================================== */
+
+/* --- Tablets e Dispositivos Médios (Até 992px) --- */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding-top: 160px; /* Mais espaço para o menu que ocupou 2 linhas */
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .beneficios-grid,
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+  }
+}
+
+/* --- Smartphones e Dispositivos Pequenos (Até 600px) --- */
+@media (max-width: 600px) {
+  /* Menu */
+  nav ul {
+    gap: 10px 15px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .logo h2 {
+    font-size: 20px;
+  }
+
+  .logo i {
+    font-size: 24px;
+  }
+
+  /* Banner Principal */
+  .hero {
+    padding-top: 180px;
+    padding-bottom: 40px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+
+  /* Seções e Títulos */
+  .beneficios,
+  .cards,
+  .sobre-projeto,
+  .pagina {
+    padding: 50px 15px;
+  }
+
+  .beneficios h2,
+  .cards h2,
+  .sobre-projeto h2,
+  .conteudo h1 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  /* Grades em 1 única coluna para telas pequenas */
+  .beneficios-grid,
+  .grid,
+  .cards-info {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .beneficio,
+  .card,
+  .info {
+    padding: 25px 20px;
+  }
+
+  /* Formulários nas páginas de contato/atendimento */
+  input,
+  textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%; /* Botão ocupa a largura toda no celular */
+    padding: 14px;
+  }
+}
